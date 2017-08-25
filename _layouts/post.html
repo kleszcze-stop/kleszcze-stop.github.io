@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<!-- Page Title -->
+<div class="section section-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Artykuł</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <!-- Blog Post -->
+            <div class="col-sm-10">
+                <div class="blog-post blog-single-post">
+                    <div class="single-post-title">
+                        <h2>{{ page.title }}</h2>
+                    </div>
+
+                    <div class="single-post-image">
+                        <img src="{{ page.image }}" alt="{{ page.title }}">
+                    </div>
+                    {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                    <div class="single-post-info">
+                        {{ page.author}} <i class="glyphicon glyphicon-time"></i>{{ page.date | date: date_format }} <a href="#"
+                                                                                                          title="Show Comments"><i
+                            class="glyphicon glyphicon-comment"></i>11</a>
+                    </div>
+                    <div class="single-post-content">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+            <!-- End Blog Post -->
+            <!-- Sidebar -->
+<!--
+            <div class="col-sm-4 blog-sidebar">
+                <h4>Szukaj w artykułach</h4>
+                <form>
+                    <div class="input-group">
+                        <input class="form-control input-md" id="appendedInputButtons" type="text">
+                        <span class="input-group-btn">
+									<button class="btn btn-md" type="button">Szukaj</button>
+								</span>
+                    </div>
+                </form>
+                <h4>Ostatnie wpisy</h4>
+                <ul class="recent-posts">
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Sed sit amet metus sit</a></li>
+                    <li><a href="#">Nunc et diam volutpat tellus ultrices</a></li>
+                    <li><a href="#">Quisque sollicitudin cursus felis</a></li>
+                </ul>
+                <h4>Kategorie</h4>
+                <ul class="blog-categories">
+                    <li><a href="#">choroby odkleszczowe</a></li>
+                    <li><a href="#">borelioza</a></li>
+                    <li><a href="#">borrelia burgdorferi </a></li>
+                    <li><a href="#">lorem ipsum</a></li>
+                </ul>
+                <h4>Archiwum</h4>
+                <ul>
+                    <li><a href="#">Styczeń 2017</a></li>
+                    <li><a href="#">Luty 2017</a></li>
+                    <li><a href="#">Marzec 2017</a></li>
+                    <li><a href="#">Kwiecień 2017</a></li>
+                    <li><a href="#">Maj 2017</a></li>
+                    <li><a href="#">Czerwiec 2017</a></li>
+                </ul>
+            </div>
+-->
+            <!-- End Sidebar -->
+        </div>
+    </div>
+</div>

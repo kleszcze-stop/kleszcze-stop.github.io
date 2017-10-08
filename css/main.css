@@ -477,10 +477,17 @@ a:hover {
 /*--------------------------------------------------------------------------
 +	Clients Logos Style
 --------------------------------------------------------------------------*/
-.clients-logo-wrapper img {
+.clients-logo-wrapper div {
   max-width: 100%;
-
+  vertical-align: middle;
 }
+.clients-logo-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
 /*--------------------------------------------------------------------------
 +	News Style
 --------------------------------------------------------------------------*/
